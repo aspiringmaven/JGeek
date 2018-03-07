@@ -3,7 +3,9 @@ package me.sumitkawatra.java8.concept.lambda;
 public class Lambda7 {
 	
 	public static void main(String[] args) {
-		
+		/**
+		 * checked exception and lambda.
+		 */
 		Contract<String, Integer> fun = (String jobName) -> {
 			if(jobName == null) {
 				throw new CheckedException();
