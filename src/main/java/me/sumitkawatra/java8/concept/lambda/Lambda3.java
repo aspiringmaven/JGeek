@@ -22,10 +22,6 @@ public class Lambda3 {
 		System.out.println(filterApple(inventory, Apple::isGreen));
 		
 		System.out.println(filterApple(inventory, Apple::isHeavy));
-		
-		
-		
-		
 	
 	}
 	

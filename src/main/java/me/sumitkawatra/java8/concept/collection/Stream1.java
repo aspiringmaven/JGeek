@@ -2,6 +2,7 @@ package me.sumitkawatra.java8.concept.collection;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.function.Consumer;
 import java.util.stream.Collectors;
 
 public class Stream1 {
@@ -28,7 +29,7 @@ public class Stream1 {
 		System.out.println(inventory);
 		
 	}
-
+	
 }
 
 
