@@ -11,7 +11,7 @@ public class Scope2 {
 		final int localVar = 12;
 		
 		/**
-		 * Only final local vars are allowed as it stores in stack
+		 * Only final local variable are allowed as it stores in stack
 		 * 
 		 * 
 		 * just think local inner class accesibility.
