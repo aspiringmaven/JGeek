@@ -8,11 +8,11 @@ public class Stream1 {
 	
 	public static void main(String[] args) {
 
-		List<Apple> inventory = new ArrayList<>();
+		List<Fruit> inventory = new ArrayList<>();
 		
-		inventory.add(new Apple("yelow", 30));
-		inventory.add(new Apple("green", 20));
-		inventory.add(new Apple("red", 30));
+		inventory.add(new Fruit("yelow", 30));
+		inventory.add(new Fruit("green", 20));
+		inventory.add(new Fruit("red", 30));
 		
 		/**
 		 * stream on collection and filter and  collect as new List.
@@ -23,7 +23,7 @@ public class Stream1 {
 		/**
 		 * To sort collection with sort method
 		 */
-		inventory.sort((Apple a1, Apple a2)-> {return a1.weight - a2.weight; });
+		inventory.sort((Fruit a1, Fruit a2)-> {return a1.weight - a2.weight; });
 		
 		System.out.println(inventory);
 		
@@ -43,11 +43,11 @@ class Apple {
 		this.weight = weight;
 	}
 	
-	public static boolean isGreen(Apple apple) {
-		return "green".equals(apple.color);
+	public static boolean isGreen(Fruit apple) {
+		return "green".equals(apple.getColor());
 	}
 	
-	public static boolean isHeavy(Apple apple) {
+	public static boolean isHeavy(Fruit apple) {
 		return apple.weight > 25;
 	}
 
