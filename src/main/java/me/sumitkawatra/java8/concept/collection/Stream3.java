@@ -35,6 +35,28 @@ public class Stream3 {
 		 */
 		employees.stream().filter(emp->"IT".equals(emp.getDept())).sorted((e1,e2)->e1.getId() - e2.getId()).forEach(System.out::println);
 		
+		
+		/**
+		 * Total expense
+		 */
+		Long totalExpense = employees.stream().map(emp->emp.getSalary()).reduce(0L, (e1,e2)-> e1+e2);
+		
+		System.out.println("totalExpense > " + totalExpense);
+		
+		
+		/**
+		 * Max salary
+		 */
+		employees.stream().map(emp->emp.getSalary()).reduce(Long::max).ifPresent(System.out::println);;
+		
+		
+		/**
+		 * Total Employee
+		 */
+		System.out.println("Total emp = " + employees.stream().count());
+		
+		
+		
 	}
 
 }
