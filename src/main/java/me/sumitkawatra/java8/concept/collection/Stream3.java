@@ -31,7 +31,7 @@ public class Stream3 {
 		System.out.println("");
 		
 		/**
-		 * Only It Emp sorted by Id
+		 * Only IT Emp sorted by Id
 		 */
 		employees.stream().filter(emp->"IT".equals(emp.getDept())).sorted((e1,e2)->e1.getId() - e2.getId()).forEach(System.out::println);
 		
