@@ -1,4 +1,4 @@
-package me.sumitkawatra.java8.concept.lambda.practice;
+package me.sumitkawatra.java8.concept.collection;
 
 import java.util.Arrays;
 import java.util.List;
@@ -11,7 +11,7 @@ import java.util.stream.Collectors;
  * @author sumkawat
  *
  */
-public class Practice5 {
+public class Stream4 {
 	
 	static String []  words = {"hello", "world"};
 	
